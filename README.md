@@ -7,7 +7,8 @@ placeholder
 
 不同于其它，通过span来实现
 效果完全和chrome FireFox 相同
+自动获取input输入框的字体属性
 
 设置：
-只要加入js就会在不支持的浏览器中添加
-有时可能需要自定css样式
+只要加入js就会在不支持的浏览器中自动为input补上效果
+
