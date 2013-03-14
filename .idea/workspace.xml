@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6545aca5-c697-4105-b1dd-375e76a2de11" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQueryPlaceholder.html" afterPath="$PROJECT_DIR$/jQueryPlaceholder.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery-placeholder.js" afterPath="$PROJECT_DIR$/jquery-placeholder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery.js" afterPath="$PROJECT_DIR$/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
     </list>
     <ignored path="placeholder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,7 +40,7 @@
       <file leaf-file-name="jquery-placeholder.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="17" selection-start="96" selection-end="96" vertical-scroll-proportion="0.14017522">
+            <state line="11" column="77" selection-start="371" selection-end="371" vertical-scroll-proportion="0.38548186">
               <folding />
             </state>
           </provider>
@@ -386,7 +382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="17" selection-start="96" selection-end="96" vertical-scroll-proportion="0.14017522">
+        <state line="11" column="77" selection-start="371" selection-end="371" vertical-scroll-proportion="0.38548186">
           <folding />
         </state>
       </provider>

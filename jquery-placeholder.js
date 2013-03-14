@@ -8,9 +8,8 @@
  */
 (function($){
     var Placeholder,
-        inputHolder = 'placeholder' in document.createElement('input') && false,
-        textareaHolder = 'placeholder' in document.createElement('textarea') && false;
-
+        inputHolder = 'placeholder' in document.createElement('input'),
+        textareaHolder = 'placeholder' in document.createElement('textarea');
     Placeholder = {
         ini:function () {
             if (inputHolder && textareaHolder) {
