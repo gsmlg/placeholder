@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6545aca5-c697-4105-b1dd-375e76a2de11" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQueryPlaceholder.html" afterPath="$PROJECT_DIR$/jQueryPlaceholder.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery-placeholder.js" afterPath="$PROJECT_DIR$/jquery-placeholder.js" />
-    </list>
+    <list default="true" id="6545aca5-c697-4105-b1dd-375e76a2de11" name="Default" comment="" />
     <ignored path="placeholder.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363269476276" ignored="false" />
+    <file path="/Dummy.txt" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363276505428" ignored="false" />
     <file path="/jquery-placeholder.js" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363276012832" ignored="false" />
     <file path="/jQueryPlaceholder.html" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363273851033" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,7 +29,7 @@
       <file leaf-file-name="jQueryPlaceholder.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQueryPlaceholder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="-11.030303">
+            <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,7 +38,7 @@
       <file leaf-file-name="jquery-placeholder.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.7359199">
+            <state line="54" column="10" selection-start="2258" selection-end="2258" vertical-scroll-proportion="-0.6388543">
               <folding />
             </state>
           </provider>
@@ -128,7 +125,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -149,17 +145,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
@@ -172,7 +169,7 @@
     </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
-        <option name="engineId" />
+        <option name="engineId" value="embedded" />
         <option name="fileUrl" />
       </JSDebuggerConfigurationSettings>
       <method />
@@ -307,6 +304,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/jQueryPlaceholder.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="2" selection-start="250" selection-end="250" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jQueryPlaceholder.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="12" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -376,14 +394,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQueryPlaceholder.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="-11.030303">
+        <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.7359199">
+        <state line="54" column="10" selection-start="2258" selection-end="2258" vertical-scroll-proportion="-0.6388543">
           <folding />
         </state>
       </provider>
