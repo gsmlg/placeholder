@@ -1,79 +1,100 @@
 /**
  * Created with JetBrains WebStorm.
  * Author: Shiming
- * Date: 2/28/13
- * Time: 10:37 AM
+ * Date: 2013-03-14
+ * Time: 23:38:23
+ * version: 0.1
  * create this jQuery plugin for ie6,7,8 to fix placeholder attribute
  */
-（function(){
-    var Placeholder;
-    var inputHolder = 'Placeholder' in document.createElement('input');
-    var textareaHolder = 'Placeholder' in document.createElement('textarea');
+(function($){
+    var Placeholder,
+        inputHolder = 'placeholder' in document.createElement('input') && false,
+        textareaHolder = 'placeholder' in document.createElement('textarea') && false;
 
     Placeholder = {
         ini:function () {
-            if (!inputHolder) {
-                $('input').placeholder()
+            if (inputHolder && textareaHolder) {
+                return false;
             }
-            if (!textareaHolder) {
-                $('textarea').placeholder();
-            }
+            this.el = $(':text[placeholder],:password[placeholder],textarea[placeholder]');
+            this.setHolders();
         },
-        set: function(obj){
-            var ipt = obj ? $(obj) : $(this),
-                txt = obj.attr('placeholder');
-            if (txt) {
-                var span = $('<span />');
-                span.text(txt);
-                span.css({
-                    color: '#999',
-                    position: 'absolute',
-                    top: ipt.offset().top,
-                    left: ipt.offset().left,
-                    width: ipt.width(),
-                    height: ipt.height(),
-                    lineHeight: ipt.height(),
-                    textIndent: ipt.css('textIndent'),
-                    padding: ipt.css('border')
+        setHolders: function(obj){
+            var el = obj ? $(obj) : this.el;
+            if (el) {
+                var self = this;
+                el.each(function() {
+                    var span = $('<label />');
+                    span.text( $(this).attr('placeholder') );
+                    span.css({
+                        color: '#999',
+                        fontSize: $(this).css('fontSize'),
+                        fontFamily: $(this).css('fontFamily'),
+                        fontWeight: $(this).css('fontWeight'),
+                        position: 'absolute',
+                        top: $(this).offset().top,
+                        left: $(this).offset().left,
+                        width: $(this).width(),
+                        height: $(this).height(),
+                        lineHeight: $(this).height() + 'px',
+                        textIndent: $(this).css('textIndent'),
+                        paddingLeft: $(this).css('borderLeftWidth'),
+                        paddingTop: $(this).css('borderTopWidth'),
+                        paddingRight: $(this).css('borderRightWidth'),
+                        paddingBottom: $(this).css('borderBottomWidth'),
+                        display: 'inline',
+                        overflow: 'hidden'
+                    })
+                    if (!$(this).attr('id')) {
+                        $(this).attr('id', self.guid);
+                    }
+                    span.attr('for', $(this).attr('id'));
+                    $(this).after(span);
+                    self.setListen(this, span);
                 })
-                Placeholder.ipts.push(span);
             }
         },
-        ipts : [],
-        listen : function() {
+        setListen : function(el, holder) {
             if (!inputHolder || !textareaHolder) {
-                $(document).live('keydown', function(e){
-                    if ($(this) in Placeholder.ipts) {
-                        if ($(this).val() != '') {
-                            $(this).hide(0);
+                el = $(el);
+                el.bind('keydown', function(e){
+                        if (el.val() != '') {
+                            holder.hide(0);
                         } else if ( /[a-zA-Z0-9`~!@#\$%\^&\*\(\)_+-=\[\]\{\};:'"\|\\,.\/\?<>]/.test(String.fromCharCode(e.keyCode)) ) {
-                            $(this).hide(0);
+                            holder.hide(0);
                         } else {
-                            $(this).show(0);
+                            holder.show(0);
                         }
-                    }
                 });
-                $(document).live('keyup', function(e){
-                    if ($(this) in Placeholder.ipts) {
-                        if ($(this).val() != '') {
-                            $(this).hide(0);
+                el.bind('keyup', function(e){
+                        if (el.val() != '') {
+                            holder.hide(0);
                         } else {
-                            $(this).show(0);
+                            holder.show(0);
                         }
-                    }
+
                 })
             }
+        },
+        guid: function() {
+            var t = 'xxxx-xxxy-xxxx-xxxx';
+            return t.replace(/[xy]/, function(l) {
+                if (l== 'x') {
+
+                } else if (l = 'y') {
+
+                }
+            })
         }
     }
-    $.placeholder = Placeholder；
+
     $.fn.placeholder = function () {
-        if (!inputHolder) {
-            $(this).find('input').each(Placeholder.set)
-            Placeholder.listen()
+        if (imputHolder && textareaHolder) {
+            return this;
         }
-        if (!textareaHolder) {
-            $(this).find('textarea').each(Placeholder.set)
-            Placeholder.listen()
-        }
+        Placeholder.setListen(this);
     }
-})()
+
+    $.placeholder = Placeholder;
+
+})(jQuery)

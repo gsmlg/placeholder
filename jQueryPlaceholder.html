@@ -4,16 +4,22 @@
     <title></title>
     <script type="text/javascript" src="jquery.js"></script>
     <script type="text/javascript" src="jquery-placeholder.js"></script>
+    <script>jQuery(function($){$.placeholder.ini();})</script>
+    <style>input{width:500px}</style>
 </head>
 <body>
     <div>
         <div>
             <span>username:</span>
-            <span><input type="text" placeholder="Put your name here, max length is 16 letters" maxlength="16" /> </span>
+            <span>
+                <input id="txt" type="text" placeholder="Put your name here, max length is 16 letters" maxlength="16" />
+            </span>
         </div>
         <div>
             <span>password:</span>
-            <span><input type="password" placeholder="Your password here" />></span>
+            <span>
+                <input id="pwd" type="password" placeholder="Your password here" />
+            </span>
         </div>
     </div>
 </body>
