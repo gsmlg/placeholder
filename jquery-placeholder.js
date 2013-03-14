@@ -3,7 +3,7 @@
  * Author: Shiming
  * Date: 2013-03-14
  * Time: 23:38:23
- * version: 0.1
+ * version: 0.1.3
  * create this jQuery plugin for ie6,7,8 to fix placeholder attribute
  */
 (function($){
@@ -89,6 +89,7 @@
             return this;
         }
         Placeholder.setListen(this);
+        return this;
     }
 
     $.placeholder = Placeholder;
