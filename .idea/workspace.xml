@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6545aca5-c697-4105-b1dd-375e76a2de11" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQueryPlaceholder.html" afterPath="$PROJECT_DIR$/jQueryPlaceholder.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery-placeholder.js" afterPath="$PROJECT_DIR$/jquery-placeholder.js" />
     </list>
     <ignored path="placeholder.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363269476276" ignored="false" />
-    <file path="/jquery-placeholder.js" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363275043723" ignored="false" />
+    <file path="/jquery-placeholder.js" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363276012832" ignored="false" />
     <file path="/jQueryPlaceholder.html" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363273851033" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
       <file leaf-file-name="jQueryPlaceholder.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQueryPlaceholder.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="30" selection-start="632" selection-end="632" vertical-scroll-proportion="-16.969696">
+            <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="-11.030303">
               <folding />
             </state>
           </provider>
@@ -40,7 +41,7 @@
       <file leaf-file-name="jquery-placeholder.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="77" selection-start="371" selection-end="371" vertical-scroll-proportion="0.38548186">
+            <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.7359199">
               <folding />
             </state>
           </provider>
@@ -206,7 +207,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32943925" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -375,14 +376,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jQueryPlaceholder.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="30" selection-start="632" selection-end="632" vertical-scroll-proportion="-16.969696">
+        <state line="13" column="18" selection-start="377" selection-end="377" vertical-scroll-proportion="-11.030303">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="77" selection-start="371" selection-end="371" vertical-scroll-proportion="0.38548186">
+        <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.7359199">
           <folding />
         </state>
       </provider>

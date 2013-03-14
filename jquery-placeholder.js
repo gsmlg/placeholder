@@ -45,7 +45,7 @@
                         overflow: 'hidden'
                     })
                     if (!$(this).attr('id')) {
-                        $(this).attr('id', self.guid);
+                        $(this).attr('id', self.guid());
                     }
                     span.attr('for', $(this).attr('id'));
                     $(this).after(span);
@@ -76,14 +76,11 @@
             }
         },
         guid: function() {
-            var t = 'xxxx-xxxy-xxxx-xxxx';
-            return t.replace(/[xy]/, function(l) {
-                if (l== 'x') {
-
-                } else if (l = 'y') {
-
-                }
-            })
+            return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+                var r = Math.random()*16| 0,
+                    v = c == 'x' ? r : (r&0x3|0x8);
+                return v.toString(16);
+            }).toUpperCase();
         }
     }
 
