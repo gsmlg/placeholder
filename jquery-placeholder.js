@@ -89,6 +89,7 @@
             return this;
         }
         Placeholder.setListen(this);
+        return this;
     }
 
     $.placeholder = Placeholder;
