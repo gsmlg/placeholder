@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6545aca5-c697-4105-b1dd-375e76a2de11" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jQueryPlaceholder.html" afterPath="$PROJECT_DIR$/jQueryPlaceholder.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/jquery-placeholder.js" afterPath="$PROJECT_DIR$/jquery-placeholder.js" />
     </list>
     <ignored path="placeholder.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363269476276" ignored="false" />
-    <file path="/jquery-placeholder.js" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363276304904" ignored="false" />
+    <file path="/jquery-placeholder.js" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363276012832" ignored="false" />
     <file path="/jQueryPlaceholder.html" changelist="6545aca5-c697-4105-b1dd-375e76a2de11" time="1363273851033" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +41,7 @@
       <file leaf-file-name="jquery-placeholder.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="20" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.6658323">
+            <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.7359199">
               <folding />
             </state>
           </provider>
@@ -382,7 +383,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/jquery-placeholder.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="20" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.6658323">
+        <state line="42" column="72" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.7359199">
           <folding />
         </state>
       </provider>
