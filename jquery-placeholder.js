@@ -85,7 +85,7 @@
     }
 
     $.fn.placeholder = function () {
-        if (imputHolder && textareaHolder) {
+        if (inputHolder && textareaHolder) {
             return this;
         }
         Placeholder.setListen(this);
