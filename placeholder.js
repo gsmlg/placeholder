@@ -45,7 +45,10 @@ EventUtil.addHandler(document, 'readystatechange', function(){
 		var hasPlaceholder = new Array();
 		for (var i in inputdoc) {
 			if (typeof(inputdoc[i]) === 'object' && inputdoc[i].getAttribute('placeholder') != null) {
-				hasPlaceholder.push(inputdoc[i]);
+				if(inputdoc[i].value.length<=0){
+					hasPlaceholder.push(inputdoc[i]);
+				}
+
 			}
 		}
 		if (hasPlaceholder.length > 0) {
@@ -63,7 +66,7 @@ EventUtil.addHandler(document, 'readystatechange', function(){
 					input.parentNode.insertBefore(span, input.nextSibling);
 				}
 				var cssStyle = getCssEffect(input);
-				span.style.color = "#999";
+				span.style.color = "#555";
 				span.style.fontSize = cssStyle.fontSize;
 				span.style.textIndent = cssStyle.textIndent;
 				span.style.lineHeight = input.clientHeight + 'px';
@@ -73,10 +76,17 @@ EventUtil.addHandler(document, 'readystatechange', function(){
 				span.style.paddingRight = cssStyle.borderRightWidth;
 				span.style.paddingBottom = cssStyle.borderBottomWidth;
 				span.style.position = "absolute";
-				span.style.top = input.offsetTop;
-				span.style.left = input.offsetLeft;
+				span.style.top = input.offsetTop + "px";
+				span.style.left = (input.offsetLeft + 10)+"px";
 				span.style.float = 'left';
 				holders[i] = span;
+
+				EventUtil.addHandler(holders[i], 'click', function(){
+					var inputs = this.parentNode.getElementsByTagName('input');
+					if(inputs && inputs.length>0){
+						inputs[0].focus();
+					}
+				});
 			}
 			var togglePlaceholder = function(event) {
 				event = EventUtil.getEvent(event);
@@ -94,9 +104,9 @@ EventUtil.addHandler(document, 'readystatechange', function(){
 						}
 					}
 				}
-			}
+			};
 			
-			EventUtil.addHandler(document, 'keydown', togglePlaceholder)
+			EventUtil.addHandler(document, 'keydown', togglePlaceholder);
 
 			EventUtil.addHandler(document, 'keyup', function(event) {
 				event = EventUtil.getEvent(event);
@@ -111,7 +121,7 @@ EventUtil.addHandler(document, 'readystatechange', function(){
 						}
 					}
 				}
-			})
+			});
 		}
 	}
 })
